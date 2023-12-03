@@ -13,6 +13,8 @@ THIS IS NOT PRODUCTION READY. WE CAN DO SO MANY MORE THINGS LIKE **CACHING**, **
 In the time available, I have set up a project with two main folders and to save time i use mongodb with different databases
 
 
+
+
 1\. Server
 ----------
 
@@ -64,6 +66,11 @@ Note: The Users service does not require authentication, while Hotels and Rooms 
 The `mobile-app` folder contains a mobile application. To configure the microservices URLs, navigate to `constants/vars.js` and make the necessary adjustments.
 
 Please be aware that due to time constraints, the React Native work may not be polished, but it provides an overview of my ability to make things work.
+
+
+and i used an icon for logout
+that will not show on IOS,
+i didn't have time to integrate react-native-vector-icons library
 
 Feel free to explore and test the functionalities. If you have any questions or need further assistance, don't hesitate to reach out.
 
