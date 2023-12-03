@@ -1,0 +1,32 @@
+language: node_js
+
+cache:
+  directories:
+    - ~/.npm
+    
+node_js:
+  - '8'
+  - '10'
+  - '12'
+  - '14'
+  - '16'
+  
+services:
+  - mongodb
+
+git:
+  depth: 3
+
+branches:
+  only:
+    - master
+
+env:
+  global:
+    - NODE_ENV=test
+    - PORT=3001
+    - MONGO_URI=mongodb://localhost/user-service
+    - MONGO_URI_TESTS=mongodb://localhost/user-service-test
+
+script: yarn validate
+after_success: yarn coverage

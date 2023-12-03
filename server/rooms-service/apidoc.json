@@ -1,0 +1,8 @@
+{
+    "name": "SmrtBooking-Room Service",
+    "version": "1.0.0",
+    "description": "SmrtBooking-Room Service REST API",
+    "title": "SmrtBooking-Room Service REST API",
+    "url" : "http://localhost:3004/",
+    "sampleUrl" : "http://localhost:3004/" 
+}

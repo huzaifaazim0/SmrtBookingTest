@@ -1,0 +1,8 @@
+{
+    "name": "SmrtBooking-Auth Service",
+    "version": "1.0.0",
+    "description": "SmrtBooking-Auth Service REST API",
+    "title": "SmrtBooking-Auth Service REST API",
+    "url" : "http://localhost:3003/",
+    "sampleUrl" : "http://localhost:3003/" 
+}
