@@ -1,118 +1,68 @@
-# OTS-SERVER
+Introduction
+------------
 
-OTS REST API
+Welcome to the Smrt Booking repository! 
 
-## Requirements
 
- - [Node](https://nodejs.org/en/download/current/) or [Docker](https://www.docker.com/)
- - [Yarn](https://yarnpkg.com/en/docs/install)
+THIS IS NOT PRODUCTION READY. WE CAN DO SO MANY MORE THINGS LIKE **CACHING**, **CIRCUIT BRAKER** **CONTAINERIZATION** AND MORE...
 
-## Getting Started
+**BUT THIS WILL GIVE YOU THE IDEA WHAT I CAN BUILD**
 
-#### Clone the repo and make it yours:
+In the time available, I have set up a project with two main folders and to save time i use mongodb with different databases
 
-```bash
-git clone --depth 1 https://github.com/Muneeb926595/ots-backend-app.git
-cd ots-backend-app
-```
 
-#### Install dependencies:
+1\. Server
+----------
 
-```bash
-yarn
-```
+The `server` folder contains four microservices:
 
-#### Set environment variables:
+*   **Users**
+*   **Hotels**
+*   **Rooms**
+*   **Auth**
 
-```bash
-cp .env.example .env
-```
+### Documentation Generation
 
-## Running Locally
+To generate documentation for each microservice, run the following command in the respective microservices folder:
 
-```bash
-yarn dev
-```
+`npm run docs`
 
-## Running in Production
+### Microservices Ports
 
-```bash
-yarn start
-```
+The microservices are currently configured to run on the following ports:
 
-## Lint
+*   Users: `3001`
+*   Hotels: `3005`
+*   Rooms: `3004`
+*   Auth: `3003`
 
-```bash
-# lint code with ESLint
-yarn lint
+Feel free to customize the ports by modifying the values in the `.env` file, which is included in this repository (considered private).
 
-# try to fix ESLint errors
-yarn lint:fix
+### Development Mode
 
-# lint and watch for changes
-yarn lint:watch
-```
+For development mode, use the following command in any microservice folder:
 
-## Test
+`npm run dev`
 
-```bash
-# run all tests with Mocha
-yarn test:jest
+### Live Mode
 
-# open nyc test coverage reports
-yarn coverage
-```
+To run the project in live mode using pm2, execute:
 
-## Validate
+`npm start`
 
-```bash
-# run lint and tests
-yarn validate
-```
+### Test Driven Development
 
-## Logs
+Tests have been implemented in the Users microservice, demonstrating proficiency in test-driven development.
 
-```bash
-# show logs in production
-pm2 logs
-```
+Note: The Users service does not require authentication, while Hotels and Rooms do require a Bearer token.
 
-## Documentation
+2\. Mobile App
+--------------
 
-```bash
-# generate and open api documentation
-yarn docs
-```
+The `mobile-app` folder contains a mobile application. To configure the microservices URLs, navigate to `constants/vars.js` and make the necessary adjustments.
 
-## Docker
+Please be aware that due to time constraints, the React Native work may not be polished, but it provides an overview of my ability to make things work.
 
-```bash
-# run container locally
-yarn docker:dev
+Feel free to explore and test the functionalities. If you have any questions or need further assistance, don't hesitate to reach out.
 
-# run container in production
-yarn docker:prod
-
-# run tests
-yarn docker:test
-```
-
-## Deploy
-
-Set your server ip:
-
-```bash
-DEPLOY_SERVER=127.0.0.1
-```
-
-Replace my Docker username with yours:
-
-```bash
-nano deploy.sh
-```
-
-Run deploy script:
-
-```bash
-yarn deploy
-```
+Thank you for your time and consideration.
