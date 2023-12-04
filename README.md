@@ -1,7 +1,19 @@
 Introduction
 ------------
 
-Welcome to the Smrt Booking repository! In the time available, I have set up a project with two main folders:
+Welcome to the Smrt Booking repository! 
+
+
+THIS IS NOT PRODUCTION READY. WE CAN DO SO MANY MORE THINGS LIKE **SERVICE DISCOVERY**,**LOAD BALANCING**,**QUEUES**, **CACHING**, **CIRCUIT BRAKER** **CONTAINERIZATION** AND MORE...
+
+**BUT THIS WILL GIVE YOU THE IDEA WHAT I CAN BUILD**
+
+**I TRIED TO BUILD EVERYTHING FROM GROUND UP (DIDN'T USE EXTRA LIBRARIES RELATED TO MICROSERVICES ARCHITECTURE) SO I CAN SHOW I UNDERSTAND THE CONCEPTS**
+
+In the time available, I have set up a project with two main folders and to save time i use mongodb with different databases
+
+
+
 
 1\. Server
 ----------
@@ -53,7 +65,14 @@ Note: The Users service does not require authentication, while Hotels and Rooms 
 
 The `mobile-app` folder contains a mobile application. To configure the microservices URLs, navigate to `constants/vars.js` and make the necessary adjustments.
 
+**Click on the hotels items to view their room details on the BROWSE screen.**
+
 Please be aware that due to time constraints, the React Native work may not be polished, but it provides an overview of my ability to make things work.
+
+
+and i used an icon for logout
+that will not show on IOS,
+i didn't have time to integrate react-native-vector-icons library
 
 Feel free to explore and test the functionalities. If you have any questions or need further assistance, don't hesitate to reach out.
 

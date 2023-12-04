@@ -4,7 +4,7 @@ Introduction
 Welcome to the Smrt Booking repository! 
 
 
-THIS IS NOT PRODUCTION READY. WE CAN DO SO MANY MORE THINGS LIKE **CACHING**, **CIRCUIT BRAKER** **CONTAINERIZATION** AND MORE...
+THIS IS NOT PRODUCTION READY. WE CAN DO SO MANY MORE THINGS LIKE **SERVICE DISCOVERY**,**LOAD BALANCING**,**QUEUES**, **CACHING**, **CIRCUIT BRAKER** **CONTAINERIZATION** AND MORE...
 
 **BUT THIS WILL GIVE YOU THE IDEA WHAT I CAN BUILD**
 
@@ -64,6 +64,8 @@ Note: The Users service does not require authentication, while Hotels and Rooms 
 --------------
 
 The `mobile-app` folder contains a mobile application. To configure the microservices URLs, navigate to `constants/vars.js` and make the necessary adjustments.
+
+**Click on the hotels items to view their room details on the BROWSE screen.**
 
 Please be aware that due to time constraints, the React Native work may not be polished, but it provides an overview of my ability to make things work.
 
